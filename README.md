@@ -14,6 +14,10 @@ Trait::IO - Helper IO traits
         # ... do things with the file handle
         # $fh is auto-closed on block leave
     }
+    
+    # Top-level is OK too:
+    my $fh does auto-close = "foo".IO.open: :w;
+    # ...
 ```
 
 # DESCRIPTION
