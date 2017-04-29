@@ -35,6 +35,8 @@ accepts it as a value.
 Currently works only with variables and not with attributes or parameters.
 Patches welcome.
 
+----
+
 #### REPOSITORY
 
 Fork this module on GitHub:
