@@ -24,7 +24,7 @@ Useful traits for working with Perl 6 IO.
 
 ## `does` `auto-close`
 
-    my $fh does auto-close = .IO.open: :w;
+    my $fh does auto-close = "foo".IO.open: :w;
 
 Installs a `LEAVE` phaser to automatically close the file handle when scope
 is left.
