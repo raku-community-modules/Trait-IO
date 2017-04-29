@@ -15,7 +15,7 @@ Trait::IO - Helper IO traits
         # $fh is auto-closed on block leave
     }
     
-    # Top-level is OK too:
+    # Top-level is OK too; will close on scope leave
     my $fh does auto-close = "foo".IO.open: :w;
     # ...
 ```
