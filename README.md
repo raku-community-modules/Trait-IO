@@ -22,11 +22,11 @@ Useful traits for working with Perl 6 IO.
 
 # EXPORTS
 
-## `auto-close`
+## `does` `auto-close`
 
     my $fh does auto-close = .IO.open: :w;
 
-Installs a `LEAVE` phaser to automatically close the file handle when block
+Installs a `LEAVE` phaser to automatically close the file handle when scope
 is left.
 
 Exports the `auto-close` constant and the `trait_mod:<does>` multi that
