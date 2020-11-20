@@ -6,7 +6,7 @@ Trait::IO - Helper IO traits
 
 # SYNOPSIS
 
-```perl6
+```raku
     use Trait::IO;
 
     for <a b c> {
@@ -22,7 +22,7 @@ Trait::IO - Helper IO traits
 
 # DESCRIPTION
 
-Useful traits for working with Perl 6 IO.
+Useful traits for working with Raku IO.
 
 # EXPORTS
 
@@ -44,12 +44,12 @@ Patches welcome.
 #### REPOSITORY
 
 Fork this module on GitHub:
-https://github.com/zoffixznet/perl6-Trait-IO
+https://github.com/raku-community-modules/Trait-IO
 
 #### BUGS
 
 To report bugs or request features, please use
-https://github.com/zoffixznet/perl6-Trait-IO/issues
+https://github.com/raku-community-modules/Trait-IO/issues
 
 #### AUTHOR
 
