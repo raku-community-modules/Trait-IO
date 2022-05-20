@@ -1,14 +1,15 @@
 {
+    "auth" : "zef:raku-community-modules",
     "perl"         : "6.c",
     "name"         : "Trait::IO",
     "license"      : "Artistic-2.0",
-    "version"      : "1.001001",
+    "version"      : "1.1",
     "description"  : "Helper IO traits",
     "tags"         : ["IO"],
     "depends"      : [ ],
-    "test-depends" : [ "Test", "Test::META" ],
+    "test-depends" : [ ],
     "provides"     : {
-        "Trait::IO" : "lib/Trait/IO.pm6"
+        "Trait::IO" : "lib/Trait/IO.rakumod"
     },
     "authors"      : [ "Zoffix Znet" ],
     "source-url"   :
