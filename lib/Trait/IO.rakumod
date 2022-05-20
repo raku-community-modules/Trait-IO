@@ -53,7 +53,7 @@ Useful traits for working with Raku IO.
 
 =head1 EXPORTS
 
--head2 does auto-close
+=head2 does auto-close
 
 =begin code :lang<raku>
 

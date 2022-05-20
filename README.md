@@ -30,7 +30,8 @@ Useful traits for working with Raku IO.
 EXPORTS
 =======
 
--head2 does auto-close
+does auto-close
+---------------
 
 ```raku
 my $fh does auto-close = "foo".IO.open: :w;
