@@ -1,17 +1,26 @@
 {
-    "auth" : "zef:raku-community-modules",
-    "perl"         : "6.c",
-    "name"         : "Trait::IO",
-    "license"      : "Artistic-2.0",
-    "version"      : "1.1",
-    "description"  : "Helper IO traits",
-    "tags"         : ["IO"],
-    "depends"      : [ ],
-    "test-depends" : [ ],
-    "provides"     : {
-        "Trait::IO" : "lib/Trait/IO.rakumod"
-    },
-    "authors"      : [ "Zoffix Znet" ],
-    "source-url"   :
-        "git://github.com/raku-community-modules/Trait-IO.git"
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Zoffix Znet"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Helper IO traits",
+  "license": "Artistic-2.0",
+  "name": "Trait::IO",
+  "perl": "6.c",
+  "provides": {
+    "Trait::IO": "lib/Trait/IO.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "git://github.com/raku-community-modules/Trait-IO.git",
+  "tags": [
+    "IO"
+  ],
+  "test-depends": [
+  ],
+  "version": "1.1"
 }
