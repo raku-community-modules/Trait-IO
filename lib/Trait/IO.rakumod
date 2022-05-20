@@ -5,15 +5,21 @@ my constant auto-close is export = class {};
 multi sub trait_mod:<does>(Variable:D $v, auto-close) is export {
     use nqp;
     $v.block.add_phaser: 'LEAVE', $v.willdo: {
-        try nqp::atkey(
+        my $ctx := nqp::ctxcaller(  # at least this many frames up
           nqp::ctxcaller(
             nqp::ctxcaller(
               nqp::ctxcaller(
-                nqp::ctxcaller(
-                  nqp::ctxcaller(
-                    nqp::ctx()))))),
-          $v.name
-        ).close
+                nqp::ctx()
+              )
+            )
+          )
+        );
+        my str $name = $v.name;;
+        nqp::until(                  # assume first found is ok
+          (my $code := try nqp::atkey($ctx,$name)),
+          $ctx := nqp::ctxcaller($ctx)
+        );
+        $code.close if $code;        # .close if found
     }
 }
 
